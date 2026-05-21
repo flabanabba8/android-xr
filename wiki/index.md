@@ -58,3 +58,7 @@ updated: 2026-05-21
 - [[source-ml-kit-translation]] — ML Kit on-device translation API
 - [[source-meta-quest-openxr]] — Meta Quest OpenXR SDK and features
 - [[source-glasses-activity]] — First activity for AI glasses (projected architecture)
+- [[source-xr-quality-guidelines]] — App quality tiers, performance targets, publishing
+- [[source-compose-spatial-ui]] — SpatialPanel, Orbiter, layouts, 3D model loading API
+- [[source-xr-visual-design]] — Typography, color, target sizes for XR and glasses
+- [[source-ml-kit-language-id]] — Language identification API (100+ languages)
