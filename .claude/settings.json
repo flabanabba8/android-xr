@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "WebSearch",
+      "WebFetch",
+      "Bash(git *)",
+      "Bash(find:*)",
+      "Bash(wc *)",
+      "Bash(ls *)",
+      "Bash(./scripts/*)"
+    ]
+  }
+}

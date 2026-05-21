@@ -1,0 +1,12 @@
+outputs/*.pdf
+outputs/handoff-*.md
+.claude/settings.local.json
+CLAUDE.local.md
+*.tmp
+.DS_Store
+.venv/
+*.apk
+*.aab
+build/
+.gradle/
+local.properties
