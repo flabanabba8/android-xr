@@ -17,6 +17,9 @@ updated: 2026-05-21
 - [[jetpack-projected]] — Phone-to-glasses communication and hardware access
 - [[spatial-ui]] — Panels, orbiters, subspace modifiers, spatial layouts
 - [[xr-device-types]] — Headsets vs wired glasses vs audio/display glasses
+- [[xrblocks-architecture]] — XR Blocks: Scripts, Core, modules, lifecycle
+- [[xrblocks-gestures]] — XR Blocks hand gesture recognition system
+- [[xrblocks-depth-physics]] — XR Blocks depth sensing + Rapier physics
 
 ## Entities
 
@@ -24,6 +27,7 @@ updated: 2026-05-21
 - [[android-studio-xr]] — Android Studio setup for XR development
 - [[xreal-project-aura]] — XREAL's wired XR glasses (Catalyst hardware)
 - [[google-play-xr]] — Publishing and quality guidelines for XR apps
+- [[xrblocks]] — XR Blocks: lightweight JS library for rapid AI+XR prototyping
 
 ## Workflows
 
@@ -45,3 +49,4 @@ updated: 2026-05-21
 
 - [[source-jetpack-xr-overview]] — Jetpack XR SDK documentation overview
 - [[source-catalyst-program]] — Catalyst Program details and eligibility
+- [[source-xrblocks]] — XR Blocks README + full manual (12 docs)
