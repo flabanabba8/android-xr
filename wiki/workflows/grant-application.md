@@ -39,19 +39,36 @@ https://docs.google.com/forms/d/e/1FAIpQLSesZlBGg010S0K9Xm5ZvxTt2WMzHGnKtBUYEhBr
 - Health & Wellness
 - Commerce & Payments
 
+## Our Strategy: Quest MVP → Grant → Glasses Port
+
+We have a Quest 3S. We don't have wired glasses. The plan:
+
+1. **Before June 30**: Build working live captioning MVP on Quest 3S (passthrough + spatial captions + translation)
+2. **June 30**: Submit application with Quest demo as proof of developer readiness
+3. **July 15+**: Receive wired glasses dev kit, port caption pipeline to Compose for XR
+
+This is strong because:
+- **Working prototype** beats a pitch deck — reviewers see real developer readiness
+- The caption pipeline (ASR → translate → display) is device-agnostic — only the display layer changes for glasses
+- Demonstrates we can ship on one platform and extend to another
+
 ## Preparation Checklist
 
-- [ ] Choose target device type(s): headset, wired glasses, display glasses
-- [ ] Define app concept with clear XR value proposition
-- [ ] Identify which priority vertical fits best
-- [ ] Draft technical design (which SDK components needed)
-- [ ] Estimate budget and articulate funding needs
-- [ ] Prepare a 6-12 month development timeline
-- [ ] Have working prototype or clear proof of concept (strengthens application)
+- [ ] Build Quest 3S MVP: passthrough + ASR + translation + spatial caption panel
+- [ ] Record demo video showing real-time captioning in passthrough mode
+- [ ] Define app as **Health & Wellness / Accessibility** vertical
+- [ ] Articulate funding needs: wired glasses dev kit, accessibility user testing, development time
+- [ ] Prepare 6-month timeline: Quest polish (month 1-2) → glasses port (month 3-4) → testing (month 5) → publish (month 6)
+- [ ] Emphasize on-device privacy (no audio leaves device) and market size (67M+ Americans with hearing difficulty)
+
+## Application Link
+
+https://docs.google.com/forms/d/e/1FAIpQLSesZlBGg010S0K9Xm5ZvxTt2WMzHGnKtBUYEhBrzd0_uwmHEA/viewform
 
 ## Post-Selection Timeline
 
-1. Selection notification by July 15, 2026
-2. Sign program agreements
-3. Receive hardware dev kits
-4. Hit milestones: technical design → implementation → Google Play publish
+1. **July 15** — Selection notification
+2. Sign program agreements, receive wired glasses dev kit
+3. Milestone 1: Technical design for glasses port
+4. Milestone 2: Implementation (port caption pipeline to Compose for XR)
+5. Milestone 3: Publish on Google Play (both Quest and glasses builds)
