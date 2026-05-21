@@ -20,6 +20,9 @@ updated: 2026-05-21
 - [[xrblocks-architecture]] — XR Blocks: Scripts, Core, modules, lifecycle
 - [[xrblocks-gestures]] — XR Blocks hand gesture recognition system
 - [[xrblocks-depth-physics]] — XR Blocks depth sensing + Rapier physics
+- [[speech-recognition]] — ASR options: built-in SpeechRecognizer, ML Kit GenAI, Gemini Live
+- [[ml-kit-translation]] — On-device translation: 50+ languages, ~30MB models, offline
+- [[live-captioning-architecture]] — ASR → translate → spatial display pipeline for hearing impaired
 
 ## Entities
 
@@ -28,6 +31,7 @@ updated: 2026-05-21
 - [[xreal-project-aura]] — XREAL's wired XR glasses (Catalyst hardware)
 - [[google-play-xr]] — Publishing and quality guidelines for XR apps
 - [[xrblocks]] — XR Blocks: lightweight JS library for rapid AI+XR prototyping
+- [[meta-quest-openxr]] — Meta Quest native development via OpenXR SDK
 
 ## Workflows
 
@@ -50,3 +54,7 @@ updated: 2026-05-21
 - [[source-jetpack-xr-overview]] — Jetpack XR SDK documentation overview
 - [[source-catalyst-program]] — Catalyst Program details and eligibility
 - [[source-xrblocks]] — XR Blocks README + full manual (12 docs)
+- [[source-asr-tts-gemini]] — ASR, TTS, Gemini Live API for Android XR glasses
+- [[source-ml-kit-translation]] — ML Kit on-device translation API
+- [[source-meta-quest-openxr]] — Meta Quest OpenXR SDK and features
+- [[source-glasses-activity]] — First activity for AI glasses (projected architecture)
