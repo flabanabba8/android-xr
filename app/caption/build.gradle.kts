@@ -12,8 +12,8 @@ android {
         applicationId = "com.xrcaption.quest"
         minSdk = 32
         targetSdk = 34
-        versionCode = 1
-        versionName = "0.1.0"
+        versionCode = 3
+        versionName = "0.3.0"
 
         ndk {
             abiFilters += listOf("arm64-v8a")
@@ -22,6 +22,10 @@ android {
 
     buildFeatures {
         compose = true
+    }
+
+    androidResources {
+        noCompress += listOf("onnx")
     }
 
     packaging {
@@ -41,9 +45,8 @@ kotlin {
 dependencies {
     implementation(project(":models"))
 
-    // Vosk offline ASR
-    implementation("com.alphacephei:vosk-android:0.3.47")
-    implementation("net.java.dev.jna:jna:5.14.0@aar")
+    // Sherpa-onnx (pre-built AAR with ONNX Runtime + Whisper support)
+    implementation(files("libs/sherpa-onnx.aar"))
 
     // Compose
     val composeBom = platform("androidx.compose:compose-bom:2024.12.01")

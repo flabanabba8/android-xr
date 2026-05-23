@@ -83,6 +83,7 @@ fun CaptionScreen(viewModel: CaptionViewModel = viewModel()) {
                 ControlBar(
                     asrState = uiState.asrState,
                     fontSize = uiState.fontSize,
+                    statusText = uiState.statusText,
                     onToggleListening = viewModel::toggleListening,
                     onIncreaseFontSize = viewModel::increaseFontSize,
                     onDecreaseFontSize = viewModel::decreaseFontSize

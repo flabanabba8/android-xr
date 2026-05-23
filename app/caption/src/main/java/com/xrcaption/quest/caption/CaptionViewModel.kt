@@ -4,7 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.xrcaption.quest.asr.AsrState
-import com.xrcaption.quest.asr.VoskEngine
+import com.xrcaption.quest.asr.SherpaEngine
 import com.xrcaption.quest.settings.UserPreferences
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -14,12 +14,13 @@ import kotlinx.coroutines.launch
 data class CaptionUiState(
     val asrState: AsrState = AsrState.Idle,
     val captions: List<CaptionEntry> = emptyList(),
-    val fontSize: Int = 24
+    val fontSize: Int = 24,
+    val statusText: String = ""
 )
 
 class CaptionViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val engine = VoskEngine()
+    private val engine = SherpaEngine()
     private val buffer = CaptionBuffer()
     private val prefs = UserPreferences(application)
 
@@ -52,11 +53,16 @@ class CaptionViewModel(application: Application) : AndroidViewModel(application)
                 _uiState.update { it.copy(fontSize = size) }
             }
         }
+        viewModelScope.launch {
+            engine.statusText.collect { text ->
+                _uiState.update { it.copy(statusText = text) }
+            }
+        }
     }
 
     fun toggleListening() {
         when (_uiState.value.asrState) {
-            is AsrState.Ready -> engine.startListening()
+            is AsrState.Ready -> engine.startListening(getApplication())
             is AsrState.Listening -> engine.stopListening()
             else -> {}
         }
