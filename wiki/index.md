@@ -44,6 +44,7 @@ updated: 2026-05-21
 
 - [[how-to-setup-studio]] — Install and configure Android Studio for XR
 - [[how-to-create-project]] — Create a new Android XR project from templates
+- [[cloakbrowser]] — Using CloakBrowser for web automation in XR development
 
 ## Comparisons
 

@@ -21,6 +21,7 @@ Read this at session start for current context.
 - SDK status: Developer Preview 4
 
 ## Compressed Observations (newest first)
+📝 cloakbrowser — CloakBrowser usage guide added
 
 📝 2026-05-21 Initial wiki build: 19 pages from Jetpack XR SDK docs + Catalyst Program
 💡 2026-05-21 SDK supports 3 device types: headsets, wired XR glasses, audio/display glasses

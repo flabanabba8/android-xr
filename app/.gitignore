@@ -7,4 +7,7 @@
 captures
 .externalNativeBuild
 .cxx
-whisper.cpp/
+
+# Large model files — download via ./download-models.sh
+models/src/main/assets/sherpa-onnx-whisper-small.en/
+models/src/main/assets/silero_vad.onnx

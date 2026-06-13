@@ -10,3 +10,20 @@ CLAUDE.local.md
 build/
 .gradle/
 local.properties
+# --- secrets & credentials (added by Claude) ---
+.env
+.env.*
+!.env.example
+!.env.sample
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+*service-account*.json
+*service_account*.json
+*credentials*.json
+gcp-*.json
+*.keystore
+.netrc
