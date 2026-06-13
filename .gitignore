@@ -27,3 +27,4 @@ id_ed25519
 gcp-*.json
 *.keystore
 .netrc
+app/caption/libs/sherpa-onnx.aar

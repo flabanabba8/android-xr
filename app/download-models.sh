@@ -29,3 +29,10 @@ rm -f "/tmp/sherpa-whisper-small.en.tar.bz2"
 echo "Done. Models at:"
 ls -lh "$ASSETS_DIR/silero_vad.onnx"
 ls -lh "$ASSETS_DIR/sherpa-onnx-whisper-small.en/"
+
+# --- Native library (not in git; ~55MB prebuilt AAR) ---
+# The sherpa-onnx Android AAR is a large prebuilt binary kept OUT of git.
+# Download it from the sherpa-onnx releases and place it at:
+#   app/caption/libs/sherpa-onnx.aar
+# Releases: https://github.com/k2-fsa/sherpa-onnx/releases  (Android .aar)
+echo "Reminder: place sherpa-onnx.aar at app/caption/libs/ (see comment in this script)."
